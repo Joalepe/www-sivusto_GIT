@@ -1,0 +1,247 @@
+
+/* body-tyylit */
+body {
+    background:url("images/ravintola2.png") top no-repeat fixed, url("images/background_pattern_color.jpg") bottom repeat fixed;
+    margin:auto;
+    background-attachment: scroll;
+}
+
+/* Navigointipalkin tyylit */
+.nav-row {
+    background-color: #F6F4F2ED;
+    opacity: 0.93;
+    box-shadow: 0px 4px 0px 0px rgba(198, 173, 143, 0.25);
+}
+
+.navbar {
+    max-width: 70%;
+    margin: auto;
+}
+
+.navbar-brand {  /* Navigointipalkin vasen yläkulma. Ravintolan nimi */
+    font-family: 'Carattere', sans-serif;
+    font-size: 64px;
+    color: #435664;
+}
+
+.navbar-brand:hover,.nav-link:hover {
+    color:#C6AD8F !important;
+}
+
+.nav-item, .nav-link {  /* Navigointipalkin oikea yläkulma. Sivu-navigointi */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #425664;
+}
+
+/* Ravintola-taustakuville varattu tyhjä tila */
+.top-picture-space {
+    height: 225px;
+}
+
+/* Main-sisältösivun tyylit */
+.main-item {
+    background-color: #F6F4F2;
+    border: 5px solid #425664;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #435664;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Carattere', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+#main-osoite-linkki {
+    color: #435664;
+}
+
+.main-aukiolo-taulukko {
+    text-align: left;
+    color: #435664;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.strong-paragraph {
+    font-weight: 600;
+}
+
+.btn-primary,  .btn-primary:active, .btn-primary:visited {  /* Mainissa. "varaa pöytä"-painikkeen tyyli */
+   background-color:#435664;
+   padding-left: 75px;
+   padding-right: 75px;
+   font-family: 'Barlow', sans-serif;
+   letter-spacing:0.03em;
+   margin-top: 60px;
+   border-style: none;
+}
+
+.btn-primary:hover {
+    background-color:#C6AD8F;
+
+}
+
+/* Footer-tyylit */
+
+.footer-row {
+    background-color: #F6F4F2;
+    box-shadow: 0px -4px 0px 0px rgba(198, 173, 143, 0.25);
+}
+
+.three-column-footer {
+    max-width: 70%;
+    margin: auto;
+}
+
+.footer-left-column {
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    color: #435664;
+}
+
+.footer-aukiolo-taulukko {
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    color: #435664;
+}
+
+.footer-yhteystiedot {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    color: #435664;
+}
+
+#footer-osoite-linkki, #footer-puhelinnumero, #footer-sp-osoite {
+    color: #435664;
+}
+
+.footer-right-column{
+    gap: 15px;
+    padding-right: 2px !important;
+}
+
+/* responsiivisuus-määritykset eri laitekoot huomioituna */
+/* maksimi-levelyttä suurennettu 70% -> 90%. Navigointi painikkeiden väli 5px -> 3px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar, .main-item,.three-column-footer {
+    max-width: 90%;
+    margin: auto;
+    }
+
+    .nav-item, .nav-link{
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    }
+}
+
+/* maksimi-levelyttä suurennettu 90% -> 95%. */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar, .main-item,.three-column-footer {
+    max-width: 95%;
+    margin: auto;
+    }
+
+    .nav-item, .nav-link{
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    }
+}
+
+/* maksimi-levelyttä suurennettu 95% -> 98%. */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar, .main-item,.three-column-footer {
+    max-width: 98%;
+    margin: auto;
+    }
+}
+
+/* maksimi-levelyttä suurennettu 98% -> 100%. */
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .navbar, .main-item,.three-column-footer {
+    max-width: 100%;
+    margin: auto;
+    }
+    /* Sisältösivun padding pienennetty =20px. */
+    .left-column, .right-column {
+        padding: 20px !important;
+    }
+    /* "varaa pöytä"-painikkeen ylä-marginaalia pienenetty 60px -> 30px ja painikkeen leveys koko ruudun leveyiseksi */
+    .btn-primary {
+        margin-top: 30px;
+        width: 100%;
+    }
+    /* Yläkuvalle varattu tyhjä tila pienennetty 225px -> 60px. */
+    .top-picture-space {
+        height: 60px;
+    }
+    /* Footerissa yhteystiedon teksti keksitetyksi */
+    .footer-yhteystiedot {
+        text-align: center;
+    }
+    /* Footerissa Some-linkkien sijainti keskitetty ja ala osaan padding 20px */
+    .footer-right-column{
+        justify-content: center !important;
+        padding-bottom: 20px !important;
+    }
+}
+
+/* Ravintolan nimen fonttikoko 64px -> 50px ja navigointi-painikkeiden teksti siirtyy keskitetyksi, kun ruudun koko menee alle 992px */
+@media (min-width: 0px) and (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 50px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .main-item {
+        margin-bottom: 50px !important;
+
+    }
+}
+
+/* sisältötekstien fonttikoko =16px ja h1-otsikon fonttikoko 36px, kun ruudun koko menee alle 767px */
+@media (min-width: 0px) and (max-width: 767.98px) {
+    p, .main-aukiolo-taulukko, .footer-left-column, .footer-aukiolo-taulukko, .footer-yhteystiedot {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* Sisältösivun ja footerin välinen tila */
+@media (min-width: 0px) and (max-width: 1199.98px) {
+    .main-item {
+        margin-bottom: 50px !important;
+    }
+}
+
+/* Navigointipalkin korkeus pienemmäksi kun ruutukoko on alle 768px */
+@media (min-width: 0px) and (max-width: 767.98px) {
+    .nav-row {
+    height: 50% !important;
+    }
+    .nav-information {
+    padding-top: 0 !important;
+    padding-bottom: 0  !important;
+    }
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ravintola Line</title>
+    <link rel="icon" type="image/x-icon" href="images/line.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Carattere' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- Navigointipalkki -->
+    <div class="container-fluid">
+      <div class="row nav-row">
+        <nav class="navbar navbar-expand-md px-1">
+          <div class="container-fluid pb-0 pt-5 nav-information">
+            <a class="navbar-brand" href="javascript:void(0)">Ravintola Line</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Pöytävaraukset</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Yhteystiedot</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>  
+      </div>
+    </div>
+
+    <!-- Navigointipalkin alla oleva tyhjä osio. Osio varattu ravintola-taustakuville -->
+    <div class="container-fluid invisible">
+      <div class="col-sm-12">
+        <div class="top-picture-space"> </div>
+      </div>
+    </div>
+
+    <!-- Sisältösivu. Kaksi columnia -->
+    <div class="container-fluid">
+      <main class="row main-item">
+        <div class="container">
+          <article class="row two-column-article">
+            <!-- Mainin vasen column. Esittely ja "varaa pöytä"-painike -->
+            <div class="col-lg-8 p-5 left-column">
+              <h1>Tervetuloa Ravintola Lineen</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, tincidunt ut rutrum sed, placerat a justo. Ut non enim nec neque bibendum tincidunt nec sed ipsum. Morbi lacus urna, gravida vitae ultrices sit amet, tristique nec magna. Aliquam erat volutpat.</p>  
+              <p>Mauris elementum consequat tristique. Mauris congue ligula id suscipit aliquet.</p>
+              <button type="button" class="btn btn-primary btn-lg">VARAA PÖYTÄ</button>
+            </div>
+            <!-- Mainin oikea column. Aukioloajat ja osoitetiedot -->
+            <div class="col-lg-4 p-5 right-column">
+              <p class="strong-paragraph">Aukioloajat</p>
+              <table class="table table-sm table-borderless main-aukiolo-taulukko">
+                <tbody>
+                  <tr>
+                    <th scope="row">ma</th>
+                    <td class="aukiolo-aika">11:30-14:00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">ti-pe</th>
+                    <td class="aukiolo-aika">11:30-24:00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">la</th>
+                    <td class="aukiolo-aika">17:00-24:00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">su</th>
+                    <td class="aukiolo-aika">Suljettu</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <p class="strong-paragraph">Osoite</p>
+              <a href="https://maps.google.com/?q=60.97633398758539,24.478351327379222" target="_blank" id="main-osoite-linkki"><p>Helmiäisenkatu 3<br>12345 Hämeenlinna</p></a>   
+            </div>
+          </article>
+        </div>
+      </main>    
+    </div>
+
+    <!-- Footer. kolme columnia -->
+    <div class="container-fluid">
+      <div class="row footer-row">
+        <footer class="row three-column-footer">
+          <!-- Footerin vasen column. Aukioloajat -->
+          <div class="col-6 col-sm-4 p-3 footer-left-column">
+            <strong>Aukioloajat</strong>
+            <table class="table table-sm table-borderless footer-aukiolo-taulukko">
+              <tbody>
+                <tr>
+                  <th scope="row">ma</th>
+                  <td class="aukiolo-aika">11:30-14:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">ti-pe</th>
+                  <td class="aukiolo-aika">11:30-24:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">la</th>
+                  <td class="aukiolo-aika">17:00-24:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">su</th>
+                  <td class="aukiolo-aika">Suljettu</td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+          <!-- Footerin keski-column. Yhteystiedot -->
+          <div class="col-6 col-sm-4 p-3 footer-center-column">
+            <p class="footer-yhteystiedot">
+              <strong>Yhteystiedot</strong>
+              <br>
+              <a href="https://maps.google.com/?q=60.97633398758539,24.478351327379222" target="_blank" id="footer-osoite-linkki">Helmiäisenkatu 3, Hämeenlinna</a>   
+              <br>
+              <a href="tel:+358509876543" id="footer-puhelinnumero">+358 50 987 6543</a>
+              <br>
+              <a href="mailto:line@ravintola.fi" id="footer-sp-osoite">line@ravintola.fi</a>
+            </p>  
+          </div>
+          <!-- Footerin oikea column. Some-linkit -->
+          <div class="col-sm-4 pt-5 d-flex justify-content-end footer-right-column">
+            <a href="https://fi-fi.facebook.com/hamkuas/" target="_blank"><img src="images/Facebook-Negative_footer.png" alt="Facebook-linkki"></a>
+            <a href="https://www.instagram.com/hamk_uas/?hl=fi" target="_blank"><img src="images/Instagram-Original_footer.png" alt="Instagram-linkki"></a>
+            <a href="https://twitter.com/HAMK_UAS" target="_blank"><img src="images/Twitter-Original_footer.png" alt="Twitter-linkki"></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
